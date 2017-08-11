@@ -793,7 +793,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XV-dk-Ont">
-                                <rect key="frame" x="319.5" y="563" width="50" height="50"/>
+                                <rect key="frame" x="320" y="563" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2OQ-38-szQ"/>
@@ -954,7 +954,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb1-sA-RPb">
-                                <rect key="frame" x="130.5" y="576" width="114" height="24"/>
+                                <rect key="frame" x="130" y="576" width="115" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.55435041240000005" green="0.55435041240000005" blue="0.55435041240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1218,38 +1218,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOz-Uc-Hcn">
-                                <rect key="frame" x="79" y="205" width="214" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92491742629999996" green="0.02556911618" blue="0.9292572737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
-                                <state key="normal" title="HER Foundation Website"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="8iG-L7-fcH" kind="show" id="G1n-A7-zpa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLP-Wo-0iG">
-                                <rect key="frame" x="79" y="402" width="214" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92491742629999996" green="0.02556911618" blue="0.9292572737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
-                                <state key="normal" title="Medications List"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="eeJ-Rp-oTf" kind="show" id="Yzv-mP-OMB"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="aFp-S5-JKv">
+                                <rect key="frame" x="92" y="262.5" width="191" height="142"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOz-Uc-Hcn">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="31"/>
+                                        <color key="backgroundColor" red="0.92491742629999996" green="0.02556911618" blue="0.9292572737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                        <state key="normal" title="HER Foundation Website"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="8iG-L7-fcH" kind="show" id="G1n-A7-zpa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLP-Wo-0iG">
+                                        <rect key="frame" x="0.0" y="111" width="191" height="31"/>
+                                        <color key="backgroundColor" red="0.92491742629999996" green="0.02556911618" blue="0.9292572737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                        <state key="normal" title="Medications List"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="eeJ-Rp-oTf" kind="show" id="Yzv-mP-OMB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.28823048639999999" green="0.29329106910000002" blue="0.31687179630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aFp-S5-JKv" firstAttribute="centerX" secondItem="VuL-yB-lSy" secondAttribute="centerX" id="O8C-Da-viP"/>
+                            <constraint firstItem="aFp-S5-JKv" firstAttribute="centerY" secondItem="VuL-yB-lSy" secondAttribute="centerY" id="Pbv-MU-rPQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="More" id="kgc-wm-jS8"/>
                 </viewController>

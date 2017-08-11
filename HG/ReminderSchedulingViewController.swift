@@ -14,17 +14,7 @@ class ReminderSchedulingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var deadlinePicker: UIDatePicker!
     
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
     @IBAction func savePressed(_ sender: UIButton) {
         let reminderItem = ReminderItem(deadline: deadlinePicker.date, title: titleField.text!, UUID: UUID().uuidString)

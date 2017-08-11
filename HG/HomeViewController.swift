@@ -58,13 +58,7 @@ class HomeViewController: UIViewController {
         let startOfTomorrow = appdelegate.model.AddDays(appdelegate.model.StartOfDay(now), daysToAdd: 1)
         self.dayChangeTimer = Timer(fireAt: startOfTomorrow, interval: secondsInADay, target: self, selector: #selector(HomeViewController.dayChangedTimerFired), userInfo: nil, repeats: false)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    
-        
-    }
-    
+
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

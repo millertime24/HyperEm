@@ -32,12 +32,7 @@ class ReminderTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         refreshList()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+ 
     func refreshList() {
         reminderItems = ReminderList.sharedInstance.allItems()
         if (reminderItems.count >= 64) {
