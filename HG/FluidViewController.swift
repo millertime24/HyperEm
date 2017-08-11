@@ -176,6 +176,7 @@ class FluidViewController: UIViewController {
     func updateLabels() {
         fluidsConsumedLabel.text = String(fluidConsumed)
         fluidsRemainingLabel.text = String(fluidGoal - fluidConsumed) + " remaining"
+        //fluidGoal-fluidConsumed == 0 if check
         let completeness: Double = Double(fluidConsumed) / Double(fluidGoal)
         radialFluids.animateStrokeEnd(toStroke: CGFloat(completeness))
         fluidGoalLabel.text = String(fluidGoal)
