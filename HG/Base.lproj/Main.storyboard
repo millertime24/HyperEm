@@ -852,10 +852,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="397"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-1c-vRM" userLabel="Radial Fluid" customClass="CircularProgressBar" customModule="HG" customModuleProvider="target">
-                                        <rect key="frame" x="76.5" y="102" width="223.5" height="223.5"/>
+                                        <rect key="frame" x="56.5" y="83" width="262.5" height="262.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJi-4V-9CH" userLabel="Fluids Consumed Label">
-                                                <rect key="frame" x="78" y="94" width="67.5" height="35.5"/>
+                                                <rect key="frame" x="78" y="94" width="106.5" height="74.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -895,6 +895,7 @@
                                     <constraint firstItem="WNK-hz-hoY" firstAttribute="top" secondItem="tkc-yB-naF" secondAttribute="top" constant="20" id="Lsb-sc-OB1"/>
                                     <constraint firstItem="Ygl-1c-vRM" firstAttribute="centerX" secondItem="tkc-yB-naF" secondAttribute="centerX" id="RjE-bs-eMX"/>
                                     <constraint firstItem="WNK-hz-hoY" firstAttribute="leading" secondItem="tkc-yB-naF" secondAttribute="leading" id="T8h-3S-QNG"/>
+                                    <constraint firstItem="Ygl-1c-vRM" firstAttribute="width" secondItem="tkc-yB-naF" secondAttribute="width" multiplier="0.7" id="fVM-mB-tkt"/>
                                     <constraint firstAttribute="trailing" secondItem="WNK-hz-hoY" secondAttribute="trailing" id="k4a-38-U5t"/>
                                 </constraints>
                             </view>
