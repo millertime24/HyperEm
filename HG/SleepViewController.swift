@@ -12,6 +12,11 @@ import HealthKit
 class SleepViewController: UIViewController {
     
     
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     @IBOutlet var displayTimeLabel: UILabel!
     
     var startTime = TimeInterval()
