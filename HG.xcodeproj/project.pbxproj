@@ -34,6 +34,10 @@
 		CE38027E1F2A51AB0080290A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE38027D1F2A51AB0080290A /* GoogleService-Info.plist */; };
 		CE44E9D41F42416900319708 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE44E9D31F42416900319708 /* HealthKit.framework */; };
 		CE44E9D61F428E4D00319708 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E9D51F428E4D00319708 /* SleepViewController.swift */; };
+		CE44E9F81F438AB800319708 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E9F71F438AB800319708 /* WeatherViewController.swift */; };
+		CE44E9FA1F438B9E00319708 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E9F91F438B9E00319708 /* NetworkController.swift */; };
+		CE44E9FC1F438BD500319708 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E9FB1F438BD500319708 /* Weather.swift */; };
+		CE44E9FE1F438C1200319708 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E9FD1F438C1200319708 /* WeatherController.swift */; };
 		CE6BD6801F191629007D0C1C /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BD67F1F191629007D0C1C /* ReminderTableViewController.swift */; };
 		CE6BD6821F191658007D0C1C /* ReminderSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BD6811F191658007D0C1C /* ReminderSchedulingViewController.swift */; };
 		CE6BD6841F19167A007D0C1C /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BD6831F19167A007D0C1C /* ReminderItem.swift */; };
@@ -86,6 +90,10 @@
 		CE44E9D01F423CD100319708 /* HG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HG.entitlements; sourceTree = "<group>"; };
 		CE44E9D31F42416900319708 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		CE44E9D51F428E4D00319708 /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		CE44E9F71F438AB800319708 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		CE44E9F91F438B9E00319708 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		CE44E9FB1F438BD500319708 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CE44E9FD1F438C1200319708 /* WeatherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		CE6BD67F1F191629007D0C1C /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 		CE6BD6811F191658007D0C1C /* ReminderSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderSchedulingViewController.swift; sourceTree = "<group>"; };
 		CE6BD6831F19167A007D0C1C /* ReminderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 		CE163F331F1424290020FDAB /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				CE44E9F61F438A4800319708 /* Weather */,
 				CEADB97D1F1D76A600F07067 /* Classes */,
 				CE163F421F142E920020FDAB /* DailyViewController.swift */,
 				CE163F3A1F142A770020FDAB /* NotesViewController.swift */,
@@ -206,6 +215,17 @@
 				CE44E9D51F428E4D00319708 /* SleepViewController.swift */,
 			);
 			name = Sleep;
+			sourceTree = "<group>";
+		};
+		CE44E9F61F438A4800319708 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				CE44E9F71F438AB800319708 /* WeatherViewController.swift */,
+				CE44E9F91F438B9E00319708 /* NetworkController.swift */,
+				CE44E9FB1F438BD500319708 /* Weather.swift */,
+				CE44E9FD1F438C1200319708 /* WeatherController.swift */,
+			);
+			name = Weather;
 			sourceTree = "<group>";
 		};
 		CE6E7C4E1F1676AF00E6BC8A /* Medications */ = {
@@ -449,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE163F3D1F142B0A0020FDAB /* WeightViewController.swift in Sources */,
+				CE44E9F81F438AB800319708 /* WeatherViewController.swift in Sources */,
 				CE163F4D1F143A540020FDAB /* FluidViewController.swift in Sources */,
 				CE6BD6801F191629007D0C1C /* ReminderTableViewController.swift in Sources */,
 				CEBED0E41F141F5E005019F2 /* HomeViewController.swift in Sources */,
@@ -461,6 +482,7 @@
 				CE6BD6861F191686007D0C1C /* ReminderList.swift in Sources */,
 				CE163F631F143CF30020FDAB /* UnitViewController.swift in Sources */,
 				CE163F411F142B9D0020FDAB /* CustomCell.swift in Sources */,
+				CE44E9FE1F438C1200319708 /* WeatherController.swift in Sources */,
 				CE6BD6841F19167A007D0C1C /* ReminderItem.swift in Sources */,
 				CEBED0C91F141E11005019F2 /* AppDelegate.swift in Sources */,
 				CE163F821F14411F0020FDAB /* MoreViewController.swift in Sources */,
@@ -470,6 +492,8 @@
 				CE6BD6821F191658007D0C1C /* ReminderSchedulingViewController.swift in Sources */,
 				CE163F391F142A0F0020FDAB /* CalendarViewController.swift in Sources */,
 				CE163F641F143CF30020FDAB /* CircularProgressBar.swift in Sources */,
+				CE44E9FA1F438B9E00319708 /* NetworkController.swift in Sources */,
+				CE44E9FC1F438BD500319708 /* Weather.swift in Sources */,
 				CEBED0E31F141F5E005019F2 /* CounterView.swift in Sources */,
 				CE163F661F143CF30020FDAB /* HistoryCell.swift in Sources */,
 				CEADB9871F1D76A600F07067 /* BEMCheckBox.m in Sources */,

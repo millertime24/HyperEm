@@ -12,18 +12,12 @@ import UIKit
 class SettingsViewController: UIViewController {
     
 //outlets
-
-    
-  
     
     @IBOutlet weak var textEnd: UITextField!
     
     
     @IBOutlet weak var buttonStartToday: UIButton!
-    
 
-    
-    
     var dateFormatter: DateFormatter = DateFormatter()
     
     

@@ -175,8 +175,11 @@ class FluidViewController: UIViewController {
     // Used to update all the labels when they're changed
     func updateLabels() {
         fluidsConsumedLabel.text = String(fluidConsumed)
-        fluidsRemainingLabel.text = String(fluidGoal - fluidConsumed) + " remaining"
-        //fluidGoal-fluidConsumed == 0 if check
+        if fluidGoal - fluidConsumed > 0 {
+            fluidsRemainingLabel.text = String(fluidGoal - fluidConsumed) + " remaining"
+        } else {
+            fluidsRemainingLabel.text = "Goal completed"
+        }
         let completeness: Double = Double(fluidConsumed) / Double(fluidGoal)
         radialFluids.animateStrokeEnd(toStroke: CGFloat(completeness))
         fluidGoalLabel.text = String(fluidGoal)
