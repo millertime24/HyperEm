@@ -1,4 +1,7 @@
 PODS:
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - Firebase/Core (4.0.2):
     - FirebaseAnalytics (= 4.0.1)
     - FirebaseCore (= 4.0.2)
@@ -16,10 +19,14 @@ PODS:
   - JTAppleCalendar (7.0.4)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Firebase/Core
   - JTAppleCalendar
 
 SPEC CHECKSUMS:
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
   FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
   FirebaseCore: 1a8bf6c795ad07d2918278657954ffd2552e9c17
@@ -27,6 +34,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   JTAppleCalendar: 6def48ecd0daae1d5baaa45e813124c2a20b184d
 
-PODFILE CHECKSUM: e0d7b38f4f48be2865eb1b31478e84acf5c44809
+PODFILE CHECKSUM: ccf228e1cc3a621ee20b45abf1b3a885ea5c6f76
 
 COCOAPODS: 1.2.1

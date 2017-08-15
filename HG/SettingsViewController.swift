@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class SettingsViewController: UIViewController {
     
 //outlets
@@ -20,6 +21,7 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var buttonStartToday: UIButton!
     
+
     
     
     var dateFormatter: DateFormatter = DateFormatter()
@@ -34,6 +36,7 @@ class SettingsViewController: UIViewController {
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
+        
         
         
         let model = self.modelData()

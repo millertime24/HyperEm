@@ -6,6 +6,8 @@ target 'HG' do
   use_frameworks!
 pod 'JTAppleCalendar'
 pod 'Firebase/Core'
+pod 'Fabric'
+pod 'Crashlytics'
   # Pods for HG
 
 end

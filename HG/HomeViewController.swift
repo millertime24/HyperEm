@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
     @IBOutlet weak var labelDaysLeft: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
@@ -25,6 +26,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
         
         
         // Customise the nav bar

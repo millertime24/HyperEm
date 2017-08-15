@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Firebase
+import Fabric
+import Crashlytics
 
 
 @UIApplicationMain
@@ -16,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var model = DaysLeftModel()
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
         FirebaseApp.configure()
+        Fabric.with([Crashlytics.self])
         return true
     }
 
