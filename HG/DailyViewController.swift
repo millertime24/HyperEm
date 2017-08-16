@@ -10,8 +10,9 @@ import UIKit
 import CoreData
 
 
-class DailyViewController: UIViewController, BEMCheckBoxDelegate {
+class DailyViewController: UIViewController, BEMCheckBoxDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+     var numbers = ["1", "2", "3", "4", "5", "6", "7", "8","9","10","11","12","13","14","15","16","17","18","19","20+"]
     
     var days: [Day] = []
     
@@ -20,7 +21,7 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate {
     
     var thisDay: Day!
     
-    var weightlb: Int = 120
+    var weightlb: Int = 0
     
     @IBOutlet weak var box: BEMCheckBox!
     
@@ -29,9 +30,15 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate {
     
     @IBOutlet weak var weightUnit: UILabel!
     
+    @IBOutlet weak var picker: UIPickerView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Connect data:
+        self.picker.delegate = self
+        self.picker.dataSource = self
         
         
         print("viewDidLoad dailyView")
@@ -49,18 +56,37 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate {
         // returns the current date in Weekday, Month Day format
         dateLabel.text = convertDate(initialDate: selectedDate)
         
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return numbers.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+       
+        return numbers[row]
+    }
+    // Catpure the picker view selection
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+    }
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let str = numbers[row]
+        return NSAttributedString(string: str, attributes: [NSForegroundColorAttributeName:UIColor.white])
     }
     
     
     
     func didTap(_ checkBox: BEMCheckBox) {
         print("box tapped")
-        
-        // set the value for bowel property
-        // if it is true , set to false
-        //if it is false, set its value to true
-        
+
         //if it is false, set its value to true
         if thisDay.bowel == false {
             thisDay.setValue(true, forKey: "bowel")
