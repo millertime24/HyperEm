@@ -26,8 +26,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
-        
         
         // Customise the nav bar
         let navBar = self.navigationController?.navigationBar

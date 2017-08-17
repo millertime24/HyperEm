@@ -15,11 +15,9 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var textEnd: UITextField!
     
-    
     @IBOutlet weak var buttonStartToday: UIButton!
 
     var dateFormatter: DateFormatter = DateFormatter()
-    
     
     let endDatePicker : UIDatePicker = UIDatePicker();
     
@@ -67,8 +65,6 @@ class SettingsViewController: UIViewController {
         
         _ = self.modelData()
         
-        //self.startDatePicker.date = Date()
-        //self.endDatePicker.date = (Calendar.current as NSCalendar).date(byAdding: NSCalendar.Unit.day, value: 30, to: Date(), options: [])!
         self.validateAndSaveModel()
     }
     

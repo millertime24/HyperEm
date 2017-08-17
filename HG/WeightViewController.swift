@@ -18,7 +18,6 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         
         weightField.text = String(selectedDay.weight)
     }

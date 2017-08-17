@@ -71,7 +71,7 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate, UIPickerViewDe
        
         return numbers[row]
     }
-    // Catpure the picker view selection
+    // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         // This method is triggered whenever the user makes a change to the picker selection.
@@ -178,9 +178,7 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate, UIPickerViewDe
                 print("found a day")
                 thisDay = days[0]
                 weightUnit.text = ("\(thisDay.weight) lbs")
-                // set the image
                 // if bowel == true  // set the check mark image
-                //if it is false , do not do anything
                 if thisDay.bowel == true {
                     box.setOn(true, animated: true)
                 }

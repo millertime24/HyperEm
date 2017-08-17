@@ -16,8 +16,6 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
     // Customise the nav bar
     let navBar = self.navigationController?.navigationBar
     navBar!.barTintColor = UIColor.black
