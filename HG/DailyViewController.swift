@@ -23,6 +23,8 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate, UIPickerViewDe
     
     var weightlb: Int = 0
     
+    // var emesis = 
+    
     @IBOutlet weak var box: BEMCheckBox!
     
     
@@ -76,6 +78,7 @@ class DailyViewController: UIViewController, BEMCheckBoxDelegate, UIPickerViewDe
         
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
+        
     }
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         let str = numbers[row]
